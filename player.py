@@ -14,8 +14,11 @@ class Player(Turtle):
         self.penup()
         self.goto(STARTING_POSITION)
         self.setheading(90)
+        self.is_passed = False
 
     def move(self):
         self.forward(MOVE_DISTANCE)
 
-
+    def passed(self):
+        if self.ycor() == FINISH_LINE_Y:
+            self.is_passed = True
