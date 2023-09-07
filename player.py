@@ -13,8 +13,8 @@ class Player(Turtle):
         self.shape("turtle")
         self.penup()
         self.goto(STARTING_POSITION)
+
+    def move(self):
         self.setheading(90)
-
-
-
+        self.forward(MOVE_DISTANCE)
 
