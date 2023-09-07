@@ -15,3 +15,4 @@ class Player(Turtle):
         self.goto(STARTING_POSITION)
         self.setheading(90)
 
+
